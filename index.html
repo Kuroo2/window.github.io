@@ -1,0 +1,58 @@
+<html>
+    <html lang="en">
+
+    </html>
+<head>
+    <title>Smart Vue Login</title>
+    <link rel="stylesheet" href="loginui.css"> </link>
+</head>
+
+<body>
+    <div class="container">
+        <h1>SMART VUE</h1>
+        <form>
+            <input type="email" id="email-id" name="EMAIL" value="" placeholder="Email" >
+            <label for="email"></label>
+            <input type="password" id="password-id" name="password" value="" placeholder="Password">
+            <label for="password"></label>
+            
+            <button type="button" class="btn" onclick="dashboardpage()"> 
+            <a class="btn" style="text-decoration: none;">LOG IN</a>
+            </button>
+
+        <script>
+            function dashboardpage() {
+             window.location.href = 'file:///C:/Users/johnd/Desktop/WINDOWVUEEEE/dashboard.html';
+            }
+        </script>
+        </form>
+       
+        <a href="forgotpassword.html">Forgot Password</a>
+        <a>or</a>
+        <a href="createaccount.html">Create New Account</a>
+    </div>
+
+
+    </div>
+
+
+    <script>
+        function login() {
+             var entermail = document.getElementById("email-id").value;
+             var enterpassword = document.getElementById("password-id").value;
+        }
+        
+        if (entermail === "group11" && enterpassword === "12345") { 
+            alert('SUCCESSFULLY LOGIN ');
+        
+            window.location.href = 'file:///C:/Users/johnd/Desktop/WINDOWVUEEEE/dashboard.html';
+        
+        } else {
+            alert('WRONG INPUT')
+        }
+    
+    </script>
+
+</body>
+
+</html>
